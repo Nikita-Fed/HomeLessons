@@ -35,7 +35,8 @@ public class ObyazatelnieZadachi {
 //        Третья задача
         int sizeArr = 9;
         int[] arrayRand = new int[sizeArr];
-        int min = Integer.MAX_VALUE, max = Integer.MIN_VALUE, ave = 0;
+        int min = Integer.MAX_VALUE, max = Integer.MIN_VALUE;
+        double ave = 0;
         int summaArray = 0;
         for (int i = 0; i < sizeArr; i++) {
             arrayRand[i] = (int) (Math.random() * 100);
@@ -50,7 +51,7 @@ public class ObyazatelnieZadachi {
         System.out.println("Ряд массива: " + Arrays.toString(arrayRand));
         System.out.println("Минимальный элемент массива: " + min);
         System.out.println("Максимальный элемент массива: " + max);
-        System.out.println("Среднее арифметическое: " + (ave = summaArray / sizeArr));
+        System.out.println("Среднее арифметическое: " + (ave = (double)summaArray / sizeArr));
 
 //        Четвертая задача
 
