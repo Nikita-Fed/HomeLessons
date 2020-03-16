@@ -10,8 +10,8 @@ public class Task2 {
         String seq = "Одно короткое слово не все меньше";
         String[] strings = seq.split("\\s");
 //        System.out.println(Arrays.toString(strings));
-        int max = Integer.MIN_VALUE;
-        int index = 0;
+        int max = Integer.MIN_VALUE; //длина наибольшего слова
+        int index = 0; //индекс наибольшего слова
         for (int i = 0; i < strings.length; i++) {
             strings[i].trim();
             if (strings[i].length() > max) {
